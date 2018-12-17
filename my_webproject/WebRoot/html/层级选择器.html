@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+			层级选择器
+				选择器和选择器之间用">"或者" "表示
+				>或者空格
+		-->
+		<style type="text/css">
+			.d1 > #dd2 > span {
+				color: red;
+				font-family: 隶书;
+				font-size: 80px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="d1">
+			<div class="dd1">
+				<span>1-1</span>
+			</div>
+			<div id="dd2">
+				<span>1-2</span>
+			</div>
+		</div>
+		<div class="d2">
+			<div class="dd1">
+				<span>2-1</span>
+			</div>
+			<div class="dd2">
+				<span>2-2</span>
+			</div>
+		</div>
+		
+	</body>
+</html>

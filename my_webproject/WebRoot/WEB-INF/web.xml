@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+
+	<context-param>
+		<param-name>java</param-name>
+		<param-value>1.8</param-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>servletDemo1</servlet-name>
+		<servlet-class>com.sxt.servlet.ServletDemo1</servlet-class>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servletDemo1</servlet-name>
+		<url-pattern>/demo1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>servletDemo2</servlet-name>
+		<servlet-class>com.sxt.servlet.ServletDemo2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servletDemo2</servlet-name>
+		<url-pattern>/demo2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>servletDemo3</servlet-name>
+		<servlet-class>com.sxt.servlet.ServletDemo3</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>servletDemo3</servlet-name>
+		<url-pattern>/demo3</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>servletDemo4</servlet-name>
+		<servlet-class>com.sxt.servlet.ServletDemo4</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>servletDemo4</servlet-name>
+		<url-pattern>/demo4</url-pattern>
+	</servlet-mapping> 
+	<!-- 
+	<servlet-mapping>
+		<servlet-name>servletDemo4</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>servletDemo4</servlet-name>
+		<url-pattern>/*</url-pattern>
+	</servlet-mapping>-->
+
+
+	<servlet>
+		<servlet-name>servletDemo5</servlet-name>
+		<servlet-class>com.sxt.servlet.ServletDemo5</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servletDemo5</servlet-name>
+		<url-pattern>/demo5</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>servletConfigDemo1</servlet-name>
+		<servlet-class>com.sxt.servletconfig.ServletConfigDemo1</servlet-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servletConfigDemo1</servlet-name>
+		<url-pattern>/servlet/scd1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>servletConfigDemo2</servlet-name>
+		<servlet-class>com.sxt.servletconfig.ServletConfigDemo2</servlet-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servletConfigDemo2</servlet-name>
+		<url-pattern>/servlet/scd2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Demo1</servlet-name>
+		<servlet-class>com.sxt.servlet.ServletParamDemo1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Demo1</servlet-name>
+		<url-pattern>/servlet/demo1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Demo2</servlet-name>
+		<servlet-class>com.sxt.servlet.ServletParamDemo2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Demo2</servlet-name>
+		<url-pattern>/servlet/demo2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ServletParamDemo3</servlet-name>
+		<servlet-class>com.sxt.servlet.ServletParamDemo3</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletParamDemo3</servlet-name>
+		<url-pattern>/servlet/demo3</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ServletPathDemo</servlet-name>
+		<servlet-class>com.sxt.servlet.ServletPathDemo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletPathDemo</servlet-name>
+		<url-pattern>/path/demo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>dispatcherDemo1</servlet-name>
+		<servlet-class>com.sxt.dispatch.ServletDispatchDemo1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dispatcherDemo1</servlet-name>
+		<url-pattern>/dispatch/demo1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>dispatcherDemo2</servlet-name>
+		<servlet-class>com.sxt.dispatch.ServletDispatchDemo2</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>dispatcherDemo2</servlet-name>
+		<url-pattern>/dispatch/demo2</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>CharsetServlet</servlet-name>
+		<servlet-class>com.sxt.charset.CharsetServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CharsetServlet</servlet-name>
+		<url-pattern>/charset/demo1</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>DownloadServlet</servlet-name>
+		<servlet-class>com.sxt.download.DownloadServlet</servlet-class>
+	</servlet>
+  <servlet>
+    <servlet-name>VerificationServlet</servlet-name>
+    <servlet-class>com.sxt.verification.VerificationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RefreshServlet</servlet-name>
+    <servlet-class>com.sxt.refresh.RefreshServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SkipServlet</servlet-name>
+    <servlet-class>com.sxt.refresh.SkipServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LocationServletDemo1</servlet-name>
+    <servlet-class>com.sxt.location.LocationServletDemo1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LocationServletDemo2</servlet-name>
+    <servlet-class>com.sxt.location.LocationServletDemo2</servlet-class>
+  </servlet>
+
+
+
+
+
+	
+
+	<servlet-mapping>
+		<servlet-name>DownloadServlet</servlet-name>
+		<url-pattern>/download/demo1</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>VerificationServlet</servlet-name>
+    <url-pattern>/code/demo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RefreshServlet</servlet-name>
+    <url-pattern>/refresh/demo1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SkipServlet</servlet-name>
+    <url-pattern>/refresh/demo2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LocationServletDemo1</servlet-name>
+    <url-pattern>/location/demo1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LocationServletDemo2</servlet-name>
+    <url-pattern>/location/demo2</url-pattern>
+  </servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

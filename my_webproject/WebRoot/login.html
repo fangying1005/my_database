@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登录界面</title>
+<script type="text/javascript">
+	function changeImg() {
+		var img = document.getElementsByTagName("img")[0];
+		//img.setAttribute("src", "/my_webproject/code/demo");// XML DOM语法
+		img.src = "/my_webproject/code/demo?time=" + new Date();
+	}
+</script>
+</head>
+<body>
+	<form action="#">
+		用户名：<input type="text" name="username" size="30"><br>
+		密&nbsp;&nbsp;&nbsp;&nbsp;码：<input type="password" name="password" size="30"><br>
+		验证码：<!-- <input type="image" src="/my_webproject/code/demo"> -->
+		<img src="/my_webproject/code/demo" onclick="changeImg();">
+		<a href="javascript:changeImg();">看不清换一张</a><br>
+		<input type="submit" value="登录">
+	</form>
+</body>
+</html>

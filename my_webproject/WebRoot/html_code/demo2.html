@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		/* var arr = new Array(5, 4, 5, 3, "23", false, 23.3);
+		alert(typeof arr);
+		alert(arr.length);
+		alert(arr.pop());
+		alert(arr.length);
+		arr.reverse();
+		arr.push("asadads");
+		var s = arr.join(";");
+		alert(s); */
+
+		var arr = [ 11, 3, 23, 22, 44, 90, 83, 34, 2 ];
+		arr.sort(function(x, y) {
+			return (x >= y ? -1 : 1);
+			/* if (x < y) {
+				return -1;
+			} else if (x > y) {
+				return 1;
+			} else {
+				return 0;
+			} */
+		});
+		//alert(arr); 
+		
+		
+		var myDate = new Date();
+		var s = myDate.getFullYear() + "-" + (myDate.getMonth() + 1) + "-" + myDate.getDate() + " " + myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
+		alert(s);
+		
+	</script>
+
+</body>
+</html>
