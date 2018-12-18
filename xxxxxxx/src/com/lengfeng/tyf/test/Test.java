@@ -32,6 +32,7 @@ public class Test {
 		System.out.println(Arrays.toString(arr_new));
 		int[] arr_new_1 = Arrays.copyOf(arr, 6);
 		System.out.println(Arrays.toString(arr_new_1));
+
 	}
 
 }
